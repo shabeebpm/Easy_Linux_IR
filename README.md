@@ -17,7 +17,7 @@ To run the Easy_Linux_IR, follow these steps:</br>
 Download the script from the repository.</br>
 
 Give it executable permission:</br>
-   **chmod +x IRLinux_Script.sh**</br>
+   **chmod +x Easy_Linux_IR.sh**</br>
 
 Execute the script with appropriate permissions (root permissions may be required for some commands):</br>
    **sudo ./Easy_Linux_IR.sh**</br>

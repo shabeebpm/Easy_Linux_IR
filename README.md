@@ -3,7 +3,7 @@
 It contains an advanced Bash script designed for conducting digital forensics on Linux systems. The script automates the collection of a wide range of system and user data, making it an invaluable tool for digital forensic investigators.
 
 Please note that : 
-This script collects various Linux artifacts for incident response
+This script collects various Linux artifacts for incident response</br>
 It requires root privileges and creates a directory named "ir_data" in the current working directory
 It uses native tools such as ps, netstat, ls, find, etc.
 It also hashes the running processes and executable files using sha256sum

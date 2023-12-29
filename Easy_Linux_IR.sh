@@ -6,7 +6,7 @@
 # It also hashes the running processes and executable files using sha256sum
 # It extracts information from files and directories to create a bodyfile
 # It collects user and system configuration files and logs
-# It is based on the UAC project by tclahr [^1^][1]
+
 
 # Create the output directory
 mkdir ir_data
@@ -65,6 +65,11 @@ lsusb > ir_data/lsusb.txt
 echo "Collecting configuration files and logs..."
 cp -r /etc/* ir_data/etc/
 cp -r /var/log/* ir_data/log/
+
+#from lets defend platform 
+echo "identifying the files with .sh, .php, .php7 and .elf extensions in the file system. "
+find / -type f \( -iname \*.php -o -iname \*.php7 -o -iname \*.sh -o -iname \*.elf \) > ir_data/fileExtensions.txt
+
 
 # Compress the output directory
 echo "Compressing the output directory..."
